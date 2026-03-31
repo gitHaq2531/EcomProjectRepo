@@ -1,15 +1,15 @@
 package com.clientName.EComProject.Login;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.clientName.EComProject.ObjectRepository.HomePage;
+import com.clientName.EComProject.ObjectRepository.LogInPage;
 import com.clientName.EComProject.genericUtilities.PropertiesFileUtility;
 
 public class LoginTest 
@@ -29,12 +29,9 @@ public class LoginTest
 			driver=new ChromeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.get(URL);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.findElement(By.id("login_button")).click();
-		driver.findElement(By.name("login_username")).sendKeys(USERNAME);
-		driver.findElement(By.name("login_password")).sendKeys(PASSWORD);
-		driver.findElement(By.name("submit")).click();
+		
+		LogInPage lp = new LogInPage(driver);
+		lp.LoginToApp(URL, USERNAME, PASSWORD);
 		Thread.sleep(2000);
 		
 		Alert alt = driver.switchTo().alert();
@@ -44,6 +41,12 @@ public class LoginTest
 		alt.accept();
 		
 		Assert.assertEquals(ExpectedAlt, text);
+		
+		HomePage hp = new HomePage(driver);
+		Thread.sleep(2000);
+
+		hp.getEntrance_examLink().click();
+		
 
 	}
 
