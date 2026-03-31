@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.clientName.EComProject.Login.SearchBookTest">
+      <class name="DemoTest.Test">
         <methods>
-          <include name="verifyUserCanSearchBookAndViewResults"/>
+          <include name="beforeSuite"/>
+          <include name="test1"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="AfterMethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.clientName.EComProject.Login.SearchBookTest -->
+      </class> <!-- DemoTest.Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
