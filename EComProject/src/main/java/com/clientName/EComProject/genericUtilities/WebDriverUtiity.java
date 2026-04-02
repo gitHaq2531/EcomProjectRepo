@@ -20,6 +20,13 @@ public class WebDriverUtiity {
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.alertIsPresent());
+	}
+	
+	public void waitForAlertToPresent(WebDriver driver)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.alertIsPresent());
 	}
 	
 	public void switchToWindowByUrl(WebDriver driver,String partialURL)

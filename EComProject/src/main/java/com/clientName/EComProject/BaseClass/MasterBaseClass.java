@@ -4,20 +4,24 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
-import com.clientName.EComProject.ObjectRepository.HomePage;
-import com.clientName.EComProject.ObjectRepository.LogInPage;
 import com.clientName.EComProject.genericUtilities.ExcelFileUtility;
+import com.clientName.EComProject.genericUtilities.JavaUtility;
 import com.clientName.EComProject.genericUtilities.PropertiesFileUtility;
+import com.clientName.EComProject.genericUtilities.WebDriverUtiity;
 
-
-public class BaseClass 
+public class MasterBaseClass 
 {
 	public WebDriver driver=null;
 	public static WebDriver sdriver;
 	protected PropertiesFileUtility pfu=new PropertiesFileUtility();
 	protected ExcelFileUtility efu=new ExcelFileUtility();
+	protected JavaUtility ju= new JavaUtility();
+	protected WebDriverUtiity wu = new WebDriverUtiity();
 	
 	@BeforeSuite
 	public void beforeSuite()
@@ -36,26 +40,6 @@ public class BaseClass
 			sdriver=driver;
 		}
 		
-	}
-	
-	@BeforeMethod
-	public void beforeMethod() throws IOException, InterruptedException
-	{
-		LogInPage lp= new LogInPage(driver);
-		System.out.println("Login to application");
-		String URL=pfu.getDataFromPropertyFile("url");
-		String USERNAME=pfu.getDataFromPropertyFile("username");
-		String PASSWORD=pfu.getDataFromPropertyFile("password");
-		lp.LoginToApp(URL, USERNAME, PASSWORD);	
-	}
-	
-	@AfterMethod
-	public void AfterMethod()
-	{
-		
-		System.out.println("Logout form application");
-		HomePage hp=new HomePage(driver);
-		hp.logOut();	
 	}
 	
 	@AfterClass
