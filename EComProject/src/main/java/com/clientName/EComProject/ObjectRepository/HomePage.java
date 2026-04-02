@@ -35,6 +35,24 @@ public class HomePage
 	@FindBy(partialLinkText = "LogOut")
 	private WebElement logout;
 	
+	@FindBy(xpath = "//li//a[@href='#']")
+	private WebElement hello;
+	
+	@FindBy(partialLinkText = "Cart")
+	private WebElement cart;
+	
+	
+	
+	public WebElement getCart() {
+		return cart;
+	}
+
+
+	public WebElement getHello() {
+		return hello;
+	}
+
+
 	public void logOut()
 	{
 		logout.click();

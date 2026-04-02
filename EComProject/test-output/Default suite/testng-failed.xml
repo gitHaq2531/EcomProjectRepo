@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoTest.Test">
+      <class name="com.clientName.EComProject.ProductModule.PlaceOrderTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="test1"/>
+          <include name="PlaceOver"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="AfterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- DemoTest.Test -->
+      </class> <!-- com.clientName.EComProject.ProductModule.PlaceOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

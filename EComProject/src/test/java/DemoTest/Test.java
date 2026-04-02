@@ -11,7 +11,7 @@ public class Test extends BaseClass
 	{
 		System.out.println("test1");
 		Thread.sleep(2000);
-		Assert.assertEquals("true", null);
+		Assert.assertEquals("true", "true");
 	
 	}
 

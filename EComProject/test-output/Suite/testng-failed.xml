@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="DemoTest.Test">
+      <class name="com.clientName.EComProject.CartModule.CartTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="test1"/>
+          <include name="CartPageNavigateTest"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="AfterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- DemoTest.Test -->
+      </class> <!-- com.clientName.EComProject.CartModule.CartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
