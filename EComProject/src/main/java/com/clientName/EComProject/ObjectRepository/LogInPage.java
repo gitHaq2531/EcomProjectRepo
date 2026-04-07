@@ -2,6 +2,7 @@ package com.clientName.EComProject.ObjectRepository;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -73,14 +74,16 @@ public class LogInPage
 	{
 		WebDriverUtiity wu=new WebDriverUtiity();
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
+		driver.manage().window().maximize();
 		driver.get(url);
 		wu.waitForPageLoad(driver);
 		loginBtn.click();
 		username.sendKeys(uname);
 		password.sendKeys(pass);
 		singin.click();
-		wait.until(ExpectedConditions.alertIsPresent());
-		driver.switchTo().alert().accept();
+		Thread.sleep(1000);
+		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+		alert.accept();
 		
 	}
 	

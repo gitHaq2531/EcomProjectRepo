@@ -32,6 +32,10 @@ public class HomePage
 	@FindBy(partialLinkText = "Children & Teens")
 	private WebElement  ChildrenTeens;
 	
+	@FindBy(xpath = "//a[@href=\"Author.php?value=Chetan%20Bhagat\"]")
+	private WebElement ChetanBhagat;
+	
+	
 	@FindBy(partialLinkText = "LogOut")
 	private WebElement logout;
 	
@@ -43,6 +47,17 @@ public class HomePage
 	
 	
 	
+	
+	public WebElement getLogout() {
+		return logout;
+	}
+
+
+	public WebElement getChetanBhagat() {
+		return ChetanBhagat;
+	}
+
+
 	public WebElement getCart() {
 		return cart;
 	}
@@ -51,14 +66,6 @@ public class HomePage
 	public WebElement getHello() {
 		return hello;
 	}
-
-
-	public void logOut()
-	{
-		logout.click();
-		driver.switchTo().alert().accept();
-	}
-	
 	
 	public WebElement getAcademicProfessionalLink() {
 		return AcademicProfessionalLink;
@@ -84,6 +91,14 @@ public class HomePage
 
 	public WebElement getLiteratureFictionLink() {
 		return LiteratureFictionLink;
+	}
+	
+	public void logOut() throws InterruptedException
+	{
+		//driver.navigate().refresh();
+		//driver.switchTo().alert().accept();
+		logout.click();
+		driver.switchTo().alert().accept();
 	}
 	
 	

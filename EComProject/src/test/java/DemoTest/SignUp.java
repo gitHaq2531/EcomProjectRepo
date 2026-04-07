@@ -14,11 +14,9 @@ import com.clientName.EComProject.ObjectRepository.SignUpPage;
 import com.clientName.EComProject.genericUtilities.JavaUtility;
 import com.clientName.EComProject.genericUtilities.WebDriverUtiity;
 
-
-
 public class SignUp extends MasterBaseClass
 {
-	@Test(groups = "smoke")
+	@Test()
 	public void signUpTest() throws IOException, InterruptedException
 	{
 		
@@ -34,10 +32,11 @@ public class SignUp extends MasterBaseClass
 		lp.getSignUp().click();
 		
 
+		//String ExpectedPopUp="Successfully Registered!!!";
 		String ExpectedPopUp="Successfully Registered!!!";
 		SignUpPage sp=new SignUpPage(driver);
-		sp.getRegister_username().sendKeys("test21"+runm);
-		sp.getRegister_password().sendKeys("test21");
+		sp.getRegister_username().sendKeys("test20"+runm);
+		sp.getRegister_password().sendKeys("test20");
 		
 		
 		sp.getSignup().click();

@@ -1,6 +1,7 @@
 package com.clientName.EComProject.genericUtilities;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -87,7 +88,10 @@ public class WebDriverUtiity {
 	{
 		Select sel=new Select(ele);
 		sel.selectByVisibleText(text);
+		
 	}
+	
+	
 	
 	
 }
