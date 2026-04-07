@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name="com.clientName.EComProject.UserModule.LoginTest"/>
+    <class name="com.clientName.EComProject.SearchModule.VerifyRelevantSerch"/>
+    <class name="com.clientName.EComProject.CartModule.CartTest"/>
+    <class name="com.clientName.EComProject.AuthorModule.FilterBy"/>
+    <class name="com.clientName.EComProject.OrderModule.PlaceOrderTest"/>
+     <!-- Suite  
+      <class name="com.clientName.EComProject.OrderModule.PlaceOrderTest"/>-->
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

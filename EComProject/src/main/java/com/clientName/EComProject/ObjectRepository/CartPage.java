@@ -18,8 +18,14 @@ public class CartPage {
 	@FindBy(linkText = "Place Order")
 	private WebElement placeOrder;
 	
+	@FindBy(xpath = "//div[@class='container']//div[@class='panel-heading']")
+	private WebElement total;
 	
 	
+	public WebElement getTotal() {
+		return total;
+	}
+
 	public WebElement getPlaceOrder() {
 		return placeOrder;
 	}

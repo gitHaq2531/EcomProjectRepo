@@ -47,7 +47,7 @@ public class CartTest extends BaseClass
 			}
 			break;
 		}
-
+		Thread.sleep(2000);
 		DescriptionPage dp=new DescriptionPage(driver);
 		dp.getAddToCart().click();
 		
@@ -58,5 +58,5 @@ public class CartTest extends BaseClass
 		boolean res = heading.contains(expectedHeading);
 		assertTrue(res);
 	}
-
+	
 }

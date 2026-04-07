@@ -15,7 +15,7 @@ import com.clientName.EComProject.ObjectRepository.LogInPage;
 import com.clientName.EComProject.ObjectRepository.SignUpPage;
 
 public class LoginTest extends MasterBaseClass{
-	@Test(groups = "smoke")
+	@Test(groups = "smoke",priority = 1)
 	public void signUpTest() throws IOException, InterruptedException
 	{
 		int runm = ju.getRandomNum();
@@ -44,13 +44,13 @@ public class LoginTest extends MasterBaseClass{
 	}
 	
 	
-	@Test(groups = "smoke")
+	@Test(groups = "smoke",priority = 3)
 	public void UserLoginWithValidCred() throws InterruptedException, IOException
 	{
 		String URL=pfu.getDataFromPropertyFile("url");
 		String USERNAME=pfu.getDataFromPropertyFile("username");
 		String PASSWORD=pfu.getDataFromPropertyFile("password");
-		
+		System.out.println(URL);
 		LogInPage lp= new LogInPage(driver);	
 		lp.LoginToApp(URL, USERNAME, PASSWORD);	
 
@@ -62,7 +62,7 @@ public class LoginTest extends MasterBaseClass{
 
 		
 	}
-	@Test(groups ="smoke")
+	@Test(groups ="smoke",priority = 2)
 	public void UserLogOut() throws InterruptedException, IOException
 	{
 		String URL=pfu.getDataFromPropertyFile("url");
@@ -71,7 +71,6 @@ public class LoginTest extends MasterBaseClass{
 		
 		LogInPage lp= new LogInPage(driver);	
 		lp.LoginToApp(URL, USERNAME, PASSWORD);	
-
 		HomePage hp=new HomePage(driver);
 		hp.logOut();
 		boolean button = lp.getLoginBtn().isDisplayed();

@@ -14,7 +14,7 @@ import com.clientName.EComProject.BaseClass.BaseClass;
 import com.clientName.EComProject.ObjectRepository.HomePage;
 
 public class VerifyRelevantSerch extends BaseClass{
-	@Test(groups = "ST")
+	@Test(groups = "smoke")
 	public void onSearchReturnRelevantBook() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
