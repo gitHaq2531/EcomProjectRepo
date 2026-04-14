@@ -19,8 +19,9 @@ public class DescriptionPage
 	@FindBy(id = "quantity")
 	private WebElement quantity;
 
-	public WebElement getAddToCart() {
-		return addToCart;
+	public CartPage clickAddToCart() {
+		addToCart.click();
+		return new CartPage(driver);
 	}
 
 

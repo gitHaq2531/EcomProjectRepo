@@ -1,185 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-07T16:18:09 IST" name="Suite" finished-at="2026-04-07T16:19:08 IST" duration-ms="58638">
+  <suite started-at="2026-04-14T12:49:04 IST" name="Default suite" finished-at="2026-04-14T12:49:11 IST" duration-ms="7308">
     <groups>
-      <group name="smoke">
-        <method signature="CartTest.CartPageNavigateTest()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" name="CartPageNavigateTest" class="com.clientName.EComProject.CartModule.CartTest"/>
-        <method signature="PlaceOrderTest.PlaceOrder()[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" name="PlaceOrder" class="com.clientName.EComProject.OrderModule.PlaceOrderTest"/>
-        <method signature="VerifyRelevantSerch.onSearchReturnRelevantBook()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" name="onSearchReturnRelevantBook" class="com.clientName.EComProject.SearchModule.VerifyRelevantSerch"/>
-        <method signature="LoginTest.signUpTest()[pri:1, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" name="signUpTest" class="com.clientName.EComProject.UserModule.LoginTest"/>
-        <method signature="LoginTest.UserLogOut()[pri:2, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" name="UserLogOut" class="com.clientName.EComProject.UserModule.LoginTest"/>
-        <method signature="LoginTest.UserLoginWithValidCred()[pri:3, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" name="UserLoginWithValidCred" class="com.clientName.EComProject.UserModule.LoginTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-04-07T16:18:09 IST" name="Test" finished-at="2026-04-07T16:19:08 IST" duration-ms="58638">
-      <class name="com.clientName.EComProject.OrderModule.PlaceOrderTest">
-        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" started-at="2026-04-07T16:19:00 IST" name="beforeClass" finished-at="2026-04-07T16:19:02 IST" duration-ms="1801" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@2541f4fb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" started-at="2026-04-07T16:19:02 IST" name="beforeMethod" finished-at="2026-04-07T16:19:05 IST" duration-ms="2569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="PlaceOrder()[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" started-at="2026-04-07T16:19:05 IST" name="PlaceOrder" finished-at="2026-04-07T16:19:07 IST" duration-ms="2670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlaceOrder -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" started-at="2026-04-07T16:19:07 IST" name="AfterMethod" finished-at="2026-04-07T16:19:08 IST" duration-ms="306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.OrderModule.PlaceOrderTest@1e800aaa]" started-at="2026-04-07T16:19:08 IST" name="afterClass" finished-at="2026-04-07T16:19:08 IST" duration-ms="334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.clientName.EComProject.OrderModule.PlaceOrderTest -->
-      <class name="com.clientName.EComProject.AuthorModule.FilterBy">
-        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.AuthorModule.FilterBy@5bda8e08]" started-at="2026-04-07T16:18:39 IST" name="beforeClass" finished-at="2026-04-07T16:18:41 IST" duration-ms="1777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@2541f4fb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.AuthorModule.FilterBy@5bda8e08]" started-at="2026-04-07T16:18:41 IST" name="beforeMethod" finished-at="2026-04-07T16:18:43 IST" duration-ms="2657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="sortByLowToHighPrice()[pri:0, instance:com.clientName.EComProject.AuthorModule.FilterBy@5bda8e08]" started-at="2026-04-07T16:18:43 IST" name="sortByLowToHighPrice" finished-at="2026-04-07T16:18:59 IST" duration-ms="16138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sortByLowToHighPrice -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.AuthorModule.FilterBy@5bda8e08]" started-at="2026-04-07T16:18:59 IST" name="AfterMethod" finished-at="2026-04-07T16:19:00 IST" duration-ms="345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.AuthorModule.FilterBy@5bda8e08]" started-at="2026-04-07T16:19:00 IST" name="afterClass" finished-at="2026-04-07T16:19:00 IST" duration-ms="392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.clientName.EComProject.AuthorModule.FilterBy -->
-      <class name="com.clientName.EComProject.SearchModule.VerifyRelevantSerch">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:09 IST" name="beforeSuite" finished-at="2026-04-07T16:18:09 IST" duration-ms="28" status="PASS">
+    <test started-at="2026-04-14T12:49:04 IST" name="Default test" finished-at="2026-04-14T12:49:11 IST" duration-ms="7308">
+      <class name="com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:04 IST" name="beforeSuite" finished-at="2026-04-14T12:49:04 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:19 IST" name="beforeClass" finished-at="2026-04-07T16:18:21 IST" duration-ms="1763" status="PASS">
+        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:04 IST" name="beforeClass" finished-at="2026-04-14T12:49:07 IST" duration-ms="3073" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@2541f4fb]]>
+                <![CDATA[org.testng.xml.XmlTest@5dbbbf8e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:21 IST" name="beforeMethod" finished-at="2026-04-07T16:18:23 IST" duration-ms="2496" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:07 IST" name="beforeMethod" finished-at="2026-04-14T12:49:10 IST" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="onSearchReturnRelevantBook()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:23 IST" name="onSearchReturnRelevantBook" finished-at="2026-04-07T16:18:28 IST" duration-ms="4723" status="PASS">
+        <test-method signature="NavigateToHomeTest()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="NavigateToHomeTest" finished-at="2026-04-14T12:49:10 IST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- onSearchReturnRelevantBook -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:28 IST" name="AfterMethod" finished-at="2026-04-07T16:18:28 IST" duration-ms="275" status="PASS">
+        </test-method> <!-- NavigateToHomeTest -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="AfterMethod" finished-at="2026-04-14T12:49:10 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:18:28 IST" name="afterClass" finished-at="2026-04-07T16:18:28 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="afterClass" finished-at="2026-04-14T12:49:11 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.clientName.EComProject.SearchModule.VerifyRelevantSerch@233795b6]" started-at="2026-04-07T16:19:08 IST" name="afterSuite" finished-at="2026-04-07T16:19:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:11 IST" name="afterSuite" finished-at="2026-04-14T12:49:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.clientName.EComProject.SearchModule.VerifyRelevantSerch -->
-      <class name="com.clientName.EComProject.CartModule.CartTest">
-        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:28 IST" name="beforeClass" finished-at="2026-04-07T16:18:30 IST" duration-ms="1771" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@2541f4fb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:30 IST" name="beforeMethod" finished-at="2026-04-07T16:18:33 IST" duration-ms="2662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="CartPageNavigateTest()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:33 IST" name="CartPageNavigateTest" finished-at="2026-04-07T16:18:33 IST" duration-ms="381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CartPageNavigateTest -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:33 IST" name="AfterMethod" finished-at="2026-04-07T16:18:34 IST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:34 IST" name="beforeMethod" finished-at="2026-04-07T16:18:35 IST" duration-ms="1766" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="searchAndAddToCartTest()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:35 IST" name="searchAndAddToCartTest" finished-at="2026-04-07T16:18:38 IST" duration-ms="3008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndAddToCartTest -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:38 IST" name="AfterMethod" finished-at="2026-04-07T16:18:39 IST" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@3eb738bb]" started-at="2026-04-07T16:18:39 IST" name="afterClass" finished-at="2026-04-07T16:18:39 IST" duration-ms="318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.clientName.EComProject.CartModule.CartTest -->
-      <class name="com.clientName.EComProject.UserModule.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:09 IST" name="beforeSuite" finished-at="2026-04-07T16:18:09 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:09 IST" name="beforeClass" finished-at="2026-04-07T16:18:12 IST" duration-ms="2779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="signUpTest()[pri:1, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:12 IST" name="signUpTest" finished-at="2026-04-07T16:18:14 IST" duration-ms="1773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpTest -->
-        <test-method signature="UserLogOut()[pri:2, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:14 IST" name="UserLogOut" finished-at="2026-04-07T16:18:17 IST" duration-ms="2672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserLogOut -->
-        <test-method signature="UserLoginWithValidCred()[pri:3, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:17 IST" name="UserLoginWithValidCred" finished-at="2026-04-07T16:18:19 IST" duration-ms="2058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserLoginWithValidCred -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:18:19 IST" name="afterClass" finished-at="2026-04-07T16:18:19 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.clientName.EComProject.UserModule.LoginTest@662ac478]" started-at="2026-04-07T16:19:08 IST" name="afterSuite" finished-at="2026-04-07T16:19:08 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.clientName.EComProject.UserModule.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
