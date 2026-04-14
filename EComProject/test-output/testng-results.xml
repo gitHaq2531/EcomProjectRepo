@@ -2,47 +2,47 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T12:06:12 IST" name="Default suite" finished-at="2026-04-14T12:06:26 IST" duration-ms="13876">
+  <suite started-at="2026-04-14T12:49:04 IST" name="Default suite" finished-at="2026-04-14T12:49:11 IST" duration-ms="7308">
     <groups>
     </groups>
-    <test started-at="2026-04-14T12:06:12 IST" name="Default test" finished-at="2026-04-14T12:06:26 IST" duration-ms="13876">
-      <class name="com.clientName.EComProject.CartModule.CartTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:12 IST" name="beforeSuite" finished-at="2026-04-14T12:06:12 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-04-14T12:49:04 IST" name="Default test" finished-at="2026-04-14T12:49:11 IST" duration-ms="7308">
+      <class name="com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:04 IST" name="beforeSuite" finished-at="2026-04-14T12:49:04 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:12 IST" name="beforeClass" finished-at="2026-04-14T12:06:17 IST" duration-ms="4541" status="PASS">
+        <test-method is-config="true" signature="beforeClass(org.testng.xml.XmlTest)[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:04 IST" name="beforeClass" finished-at="2026-04-14T12:49:07 IST" duration-ms="3073" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@fd57c6f0]]>
+                <![CDATA[org.testng.xml.XmlTest@5dbbbf8e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:17 IST" name="beforeMethod" finished-at="2026-04-14T12:06:20 IST" duration-ms="2896" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:07 IST" name="beforeMethod" finished-at="2026-04-14T12:49:10 IST" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="searchAndAddToCartTest()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:20 IST" name="searchAndAddToCartTest" finished-at="2026-04-14T12:06:26 IST" duration-ms="5608" status="PASS">
+        <test-method signature="NavigateToHomeTest()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="NavigateToHomeTest" finished-at="2026-04-14T12:49:10 IST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchAndAddToCartTest -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:26 IST" name="AfterMethod" finished-at="2026-04-14T12:06:26 IST" duration-ms="330" status="PASS">
+        </test-method> <!-- NavigateToHomeTest -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="AfterMethod" finished-at="2026-04-14T12:49:10 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:26 IST" name="afterClass" finished-at="2026-04-14T12:06:26 IST" duration-ms="422" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:10 IST" name="afterClass" finished-at="2026-04-14T12:49:11 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.clientName.EComProject.CartModule.CartTest@2d1ef81a]" started-at="2026-04-14T12:06:26 IST" name="afterSuite" finished-at="2026-04-14T12:06:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest@3c41ed1d]" started-at="2026-04-14T12:49:11 IST" name="afterSuite" finished-at="2026-04-14T12:49:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.clientName.EComProject.CartModule.CartTest -->
+      </class> <!-- com.clientName.EComProject.CartModule.ContinueShoppingNavigationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
