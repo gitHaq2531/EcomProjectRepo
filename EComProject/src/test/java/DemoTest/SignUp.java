@@ -28,7 +28,7 @@ public class SignUp extends MasterBaseClass
 		
 		
 		LogInPage lp= new LogInPage(driver);	
-		
+		System.out.println("login");
 		lp.getSignUp().click();
 		
 
