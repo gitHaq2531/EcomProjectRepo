@@ -11,13 +11,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.clientName.EComProject.BaseClass.BaseClass;
-import com.clientName.EComProject.ObjectRepository.HomePage;
 
 public class VerifyRelevantSerch extends BaseClass{
 	@Test(groups = "smoke")
 	public void onSearchReturnRelevantBook() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		HomePage hp=new HomePage(driver);
 		String Book = efu.getDataFromExcelFile("Search_module", 1, 0);
 		hp.getSearchBar().sendKeys(Book,Keys.ENTER);
 		Thread.sleep(3000);

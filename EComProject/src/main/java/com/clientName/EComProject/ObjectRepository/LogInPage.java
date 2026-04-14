@@ -70,7 +70,7 @@ public class LogInPage
 	}
 
 
-	public void LoginToApp(String url,String uname,String pass) throws InterruptedException
+	public HomePage LoginToApp(String url,String uname,String pass) throws InterruptedException
 	{
 		WebDriverUtiity wu=new WebDriverUtiity();
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -84,6 +84,7 @@ public class LogInPage
 		Thread.sleep(1000);
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		alert.accept();
+		return new HomePage(driver);
 		
 	}
 	

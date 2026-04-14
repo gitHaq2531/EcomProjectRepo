@@ -34,7 +34,6 @@ public class CartTest extends BaseClass
 	@Test()
 	public void searchAndAddToCartTest() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		HomePage hp=new HomePage(driver);
 		String Book = efu.getDataFromExcelFile("Search_module", 1, 0);
 		hp.getSearchBar().sendKeys(Book,Keys.ENTER);
 		List<WebElement> result = driver.findElements(By.xpath("//div[@class='book-block']"));
@@ -49,11 +48,10 @@ public class CartTest extends BaseClass
 		}
 		Thread.sleep(2000);
 		DescriptionPage dp=new DescriptionPage(driver);
-		dp.getAddToCart().click();
+		CartPage cp=dp.clickAddToCart();
 		
-		CartPage cp=new CartPage(driver);
 		String heading = cp.getYourCartHeading().getText();
-		//System.out.println(heading);
+		
 		String expectedHeading="YOUR CART";
 		boolean res = heading.contains(expectedHeading);
 		assertTrue(res);

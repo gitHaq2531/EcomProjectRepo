@@ -25,6 +25,7 @@ public class BaseClass
 	protected PropertiesFileUtility pfu=new PropertiesFileUtility();
 	protected ExcelFileUtility efu=new ExcelFileUtility();
 	protected WebDriverUtiity wu = new WebDriverUtiity();
+	public HomePage hp;
 
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite()
@@ -63,11 +64,10 @@ public class BaseClass
 			sdriver=driver;
 		}
 		ThreadSafeUtility.setDriver(driver);
-		driver=ThreadSafeUtility.getDriver();
-		//driver.get(futils.getDataFromPropertiesFile("url"));	
+		driver=ThreadSafeUtility.getDriver();	
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-		//wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		
 
 	}
 
@@ -79,14 +79,15 @@ public class BaseClass
 		String URL=pfu.getDataFromPropertyFile("url");
 		String USERNAME=pfu.getDataFromPropertyFile("username");
 		String PASSWORD=pfu.getDataFromPropertyFile("password");
-		lp.LoginToApp(URL, USERNAME, PASSWORD);	
+		hp=lp.LoginToApp(URL, USERNAME, PASSWORD);	
+		
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void AfterMethod() throws InterruptedException
 	{
 		WebDriver driver = ThreadSafeUtility.getDriver();
-		HomePage hp = new HomePage(driver);
+		hp = new HomePage(driver);
 		hp.logOut();
 		System.out.println("Logout from application");
 

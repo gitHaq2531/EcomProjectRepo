@@ -6,10 +6,10 @@
       <class name="com.clientName.EComProject.CartModule.CartTest">
         <methods>
           <include name="beforeSuite"/>
+          <include name="CartPageNavigateTest"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="searchAndAddToCartTest"/>
           <include name="AfterMethod"/>
           <include name="afterClass"/>
         </methods>
